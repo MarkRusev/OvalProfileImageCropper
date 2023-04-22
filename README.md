@@ -5,7 +5,7 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
 <p float="left">
   <img src="https://user-images.githubusercontent.com/68556824/233808056-1d0b8f3b-1115-457d-8b0e-316b5c853e0b.jpg" width="300" height="600"> &nbsp;
   <img src="https://user-images.githubusercontent.com/68556824/233807937-7ad9345e-50c4-49f9-ae5b-c55efb59a5b5.jpg" width="300" height="600"> &nbsp;
-  <img src="https://user-images.githubusercontent.com/68556824/233807976-c0ba5954-1cb3-44ce-bc92-db99d7c678ce.jpg" width="300" height="600"> 
+  <img src="https://user-images.githubusercontent.com/68556824/233808339-81ab69aa-34fb-4fb5-94aa-5e7952c329f9.jpg" width="200" height="100"> 
 </p>
 
 
