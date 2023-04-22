@@ -53,3 +53,6 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
 </pre>
 
 # [See code 👀](https://github.com/MarkRusev/OvalProfileImageCropper/tree/main/app/src/main/java/com/example/ovalprofilepicturecropper)
+
+# [LinkedIn 🇧🇬](https://www.linkedin.com/in/mark-rusev-4805141b3/)
+
