@@ -1,4 +1,4 @@
-# OvalProfileImageCropper 🤓
+# OvalProfileImageCropper 🤖
  
 Profile image cropper using [CircleImageView](https://github.com/hdodenhof/CircleImageView) and [CanHub](https://github.com/CanHub/Android-Image-Cropper).
 
