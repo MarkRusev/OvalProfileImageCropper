@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private UserHelper userHelper;
     private ImageView edit, profilePic;
 
-    private ActivityResultLauncher<CropImageContractOptions> cropImage =
+    private final ActivityResultLauncher<CropImageContractOptions> cropImageLauncher =
             registerForActivityResult(new CropImageContract(), result -> {
 
                 if (result.isSuccessful()) {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-    private ActivityResultLauncher<Intent> photoLibraryLauncher = registerForActivityResult(
+    private final ActivityResultLauncher<Intent> photoLibraryLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         cropImageOptions.minCropWindowHeight = 110;
                         cropImageOptions.minCropWindowWidth = 110;
 
-                        cropImage.launch(new CropImageContractOptions(photoUri, cropImageOptions));
+                        cropImageLauncher.launch(new CropImageContractOptions(photoUri, cropImageOptions));
 
                     }
                 }
