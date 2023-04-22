@@ -13,10 +13,17 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
     </code>
 </pre>
 
-# Usage
+# XML
 <pre>
     <code>
-     ```xml
+   &lt;FrameLayout
+        android:id="@+id/imageFl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"&gt;
+    
      &lt;de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="110dp"
@@ -31,6 +38,14 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
             android:layout_height="25dp"
             android:layout_gravity="bottom|end"
             android:src="@drawable/pen" /&gt;
-     ```
+            
+         &lt;/FrameLayout&gt;   
+         
+     &lt;androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.067031465" /&gt;
     </code>
 </pre>
