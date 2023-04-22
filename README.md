@@ -50,4 +50,4 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
     </code>
 </pre>
 
-# [See code 👀](https://github.com/MarkRusev/OvalProfileImageCropper/blob/main/app/src/main/java/com/example/ovalprofilepicturecropper/MainActivity.java)
+# [See code 👀](https://github.com/MarkRusev/OvalProfileImageCropper/tree/main/app/src/main/java/com/example/ovalprofilepicturecropper)
