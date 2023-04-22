@@ -57,7 +57,7 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
     Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
     photoLibraryLauncher.launch(intent);
     
-    private final ActivityResultLauncher<Intent> photoLibraryLauncher = registerForActivityResult(
+      private final ActivityResultLauncher<Intent> photoLibraryLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -80,7 +80,7 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
                 }
             });
             
-     private final ActivityResultLauncher<CropImageContractOptions> cropImageLauncher =
+       private final ActivityResultLauncher<CropImageContractOptions> cropImageLauncher =
             registerForActivityResult(new CropImageContract(), result -> {
 
                 if (result.isSuccessful()) {
