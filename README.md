@@ -2,6 +2,8 @@
  
 Profile image cropper using [CircleImageView](https://github.com/hdodenhof/CircleImageView) and [CanHub](https://github.com/CanHub/Android-Image-Cropper).
 
+<img src="https://user-images.githubusercontent.com/68556824/233807175-d614f280-b1fd-4009-a852-bb3747785936.jpg" width="320" height="600">
+
 # Gradle
 <pre>
     <code>
