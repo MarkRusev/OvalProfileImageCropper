@@ -98,7 +98,5 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
                     Exception exception = result.getError();
                 }
             });
-    
-    
     </code> 
 </pre>
