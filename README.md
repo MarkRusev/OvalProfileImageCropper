@@ -16,22 +16,7 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
 # Usage
 <pre>
     <code>
-       <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <FrameLayout
-        android:id="@+id/imageFl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline">
-
-        <de.hdodenhof.circleimageview.CircleImageView
+     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="110dp"
             android:layout_height="110dp"
@@ -45,20 +30,6 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
             android:layout_height="25dp"
             android:layout_gravity="bottom|end"
             android:src="@drawable/pen" />
-
-    </FrameLayout>
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.067031465" />
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-       }
+    
     </code>
 </pre>
