@@ -31,6 +31,6 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
             android:layout_height="25dp"
             android:layout_gravity="bottom|end"
             android:src="@drawable/pen" />
-     ```
+     .```
     </code>
 </pre>
