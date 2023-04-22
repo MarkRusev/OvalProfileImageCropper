@@ -49,3 +49,56 @@ Profile image cropper using [CircleImageView](https://github.com/hdodenhof/Circl
         app:layout_constraintGuide_percent="0.067031465" /&gt;
     </code>
 </pre>
+
+# Java
+<p> First start the image picker launcher and then pass the given image to the crop launcher </p>
+<pre>
+    <code>
+    Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+    photoLibraryLauncher.launch(intent);
+    
+    private final ActivityResultLauncher<Intent> photoLibraryLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        Uri photoUri = Objects.requireNonNull(result.getData()).getData();
+
+                        CropImageOptions cropImageOptions = new CropImageOptions();
+                        cropImageOptions.cropShape = CropImageView.CropShape.OVAL;
+                        cropImageOptions.fixAspectRatio = true;
+
+                        //optionals
+                        cropImageOptions.minCropWindowHeight = 110;
+                        cropImageOptions.minCropWindowWidth = 110;
+
+                        cropImageLauncher.launch(new CropImageContractOptions(photoUri, cropImageOptions));
+
+                    }
+                }
+            });
+            
+     private final ActivityResultLauncher<CropImageContractOptions> cropImageLauncher =
+            registerForActivityResult(new CropImageContract(), result -> {
+
+                if (result.isSuccessful()) {
+                    // Use the returned uri.
+                    Uri uriContent = result.getUriContent();
+
+                    profilePic.setImageURI(uriContent);
+
+                    assert uriContent != null;
+
+                    userHelper.setProfilePicture(uriContent.toString());
+
+                } else {
+                    // An error occurred.
+                    Exception exception = result.getError();
+                }
+            });
+    
+    
+    </code> 
+</pre>
